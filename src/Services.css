@@ -1,0 +1,161 @@
+/* ---------- Container ---------- */
+.services-container {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #e0f2f1, #f1f8e9); /* soft green gradient */
+  min-height: 100vh;
+}
+
+/* ---------- Services Title ---------- */
+.services-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2e7d32; /* deep green */
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px #a5d6a7; /* subtle shadow for contrast */
+}
+
+/* ---------- Services Grid ---------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- Individual Service Card ---------- */
+.service-card {
+  background-color: #fffde7; /* light yellowish for natural feel */
+  border-left: 5px solid #689f38; /* green accent */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s, border-left-color 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+  border-left-color: #33691e; /* darker green on hover */
+}
+
+/* ---------- Service Title & Description ---------- */
+.service-card h3 {
+  color: #33691e; /* darker green */
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ---------- Buttons ---------- */
+.service-button {
+  text-align: center;
+  padding: 0.6rem 1rem;
+  background-color: #689f38; /* green button */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.service-button:hover {
+  background-color: #33691e;
+}
+
+/* ---------- Disabled Buttons ---------- */
+.service-button.disabled {
+  background-color: #cfd8dc; /* muted gray */
+  cursor: not-allowed;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 1rem;
+  }
+
+  .services-title {
+    font-size: 1.6rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+}
+.services-container {
+  text-align: center;
+  background-color: #f8fff2;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 2px solid #a5d6a7;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.service-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #2e7d32;
+}
+
+.service-button.disabled {
+  background-color: #c8e6c9;
+  color: #777;
+  cursor: not-allowed;
+}

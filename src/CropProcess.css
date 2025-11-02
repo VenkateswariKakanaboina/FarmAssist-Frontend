@@ -1,0 +1,78 @@
+.crop-process-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.crop-process-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.crop-process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.process-card {
+  background: #fff;
+  border-left: 6px solid #4caf50;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.process-card.completed {
+  background-color: #e0e0e0;
+  border-left-color: gray;
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.button-row button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-row button:hover {
+  background-color: #388e3c;
+}
+
+.note {
+  background: #fff8dc;
+  border-left: 4px solid #ff9800;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.process-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: #388e3c;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
+.btn:hover {
+  background-color: #2e7d32;
+}

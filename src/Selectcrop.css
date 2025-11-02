@@ -1,0 +1,95 @@
+/* ---------- Container ---------- */
+.selectcrop-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f8ff; /* light sky blue */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Form Title ---------- */
+.selectcrop-container h2 {
+  text-align: center;
+  color: #2e7d32; /* green */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* ---------- Form ---------- */
+.selectcrop-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Labels ---------- */
+.selectcrop-form label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+  color: #1b5e20; /* dark green */
+}
+
+/* ---------- Inputs & Selects ---------- */
+.selectcrop-form input,
+.selectcrop-form select {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.selectcrop-form input:focus,
+.selectcrop-form select:focus {
+  border-color: #689f38; /* green focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(104, 159, 56, 0.5);
+}
+
+/* ---------- Readonly Field ---------- */
+.selectcrop-form input[readonly] {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* ---------- Button ---------- */
+.selectcrop-form button {
+  padding: 0.8rem 1rem;
+  background-color: #689f38; /* green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+.selectcrop-form button:hover {
+  background-color: #558b2f;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .selectcrop-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .selectcrop-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .selectcrop-form input,
+  .selectcrop-form select {
+    font-size: 0.95rem;
+  }
+
+  .selectcrop-form button {
+    font-size: 1rem;
+  }
+}

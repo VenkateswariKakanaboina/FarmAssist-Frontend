@@ -1,0 +1,104 @@
+.dashboard-page {
+  background-color: #f4f9f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b5e20;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.navbar-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.dashboard-container {
+  padding: 2rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-section {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.dashboard-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h3 {
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  background: #388e3c;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: #2e7d32;
+}
+/* 🌱 Activity Planner Card Styling */
+.activity-planner-card {
+  background-color: #4caf50;       /* Green background */
+  color: white;                    /* White text */
+  font-weight: 700;                /* Bold text */
+  text-align: center;              /* Centered text */
+  padding: 1.2rem;                 /* Spacing inside the box */
+  border-radius: 10px;             /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Hover Effect */
+.activity-planner-card:hover {
+  background-color: #388e3c;   /* Darker green on hover */
+  transform: translateY(-3px);
+}

@@ -1,0 +1,8 @@
+.weather-panel {
+  background: #ecf8f2;
+  border-left: 6px solid #2e7d32;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 90%;
+}
